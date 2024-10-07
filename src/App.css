@@ -1,20 +1,29 @@
+/* Global base styles */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
   color: #0cbedd;
-  height: 100%;
   background-image: url("https://cdn.vectorstock.com/i/500p/02/90/quiz-game-blizzard-shape-neon-frame-ui-vector-53010290.jpg");
   background-size: cover;
-  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Main app container */
 .App {
   text-align: center;
   padding: 20px;
-
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
 }
 
+/* Main and mobile screen containers */
 .main-screen, .mobile-screen {
   margin: 20px auto;
   padding: 20px;
@@ -23,51 +32,60 @@ body {
   border-radius: 8px;
   background-color: #090138;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  height: 100%;
+  transition: transform 0.3s ease;
 }
-.main-screen, .mobile-screen :hover {
+
+.main-screen:hover, .mobile-screen:hover {
   transform: scale(1.03);
-
 }
 
+/* Question section */
 .question-section {
   margin-bottom: 20px;
-
+  color: white;
 }
 
 .options p {
   margin: 10px 0;
+  color: white;
 }
 
+/* Feedback message */
 .feedback {
   margin: 20px 0;
   font-size: 1.2em;
   color: green;
   display: flex;
-  
+  justify-content: center;
+  font-weight: bold;
 }
 
+/* Timer */
 .timer {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border:5px solid white;
+  border: 5px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12x;
+  font-size: 1.5rem;
   font-weight: 700;
-  position: absolute;
-  bottom: 10px;
-  top: 80px;
   color: red;
-
+  margin: 20px auto;
 }
 
+/* Player section */
 .players-section {
   margin-top: 20px;
 }
 
+.players-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Button styling */
 button {
   display: block;
   width: 100%;
@@ -79,13 +97,15 @@ button {
   border-radius: 5px;
   background-color: #007bff;
   color: white;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s;
 }
 
 button:hover {
   background-color: #3ed12a;
+  transform: scale(1.02);
 }
 
+/* Option button */
 .option-button {
   background-color: #594797;
   color: #e2dddd;
@@ -97,23 +117,25 @@ button:hover {
   color: white;
 }
 
+/* QR Code */
 .qr-code {
   margin-top: 20px;
 }
 
-.players-section ul {
-  list-style: none;
-  padding: 0;
-}
-
+/* Input text styling */
 input[type="text"] {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 1.1rem;
+  box-sizing: border-box;
 }
 
+/* Responsive styling for different screen sizes */
+
+/* Mobile styles (screens smaller than 768px) */
 @media (max-width: 768px) {
   .App {
     padding: 10px;
@@ -122,17 +144,72 @@ input[type="text"] {
   .main-screen, .mobile-screen {
     width: 100%;
     box-shadow: none;
+    padding: 15px;
   }
 
   button {
     font-size: 1em;
+    padding: 8px;
   }
 
   input[type="text"] {
     font-size: 1em;
   }
+
+  .timer {
+    width: 60px;
+    height: 60px;
+    font-size: 1.2rem;
+  }
+
+  .feedback {
+    font-size: 1.1em;
+  }
 }
 
+/* Tablet styles (screens between 768px and 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-screen, .mobile-screen {
+    width: 90%;
+    padding: 20px;
+  }
 
+  button {
+    font-size: 1.1em;
+  }
 
+  .timer {
+    width: 70px;
+    height: 70px;
+    font-size: 1.4rem;
+  }
 
+  .feedback {
+    font-size: 1.3em;
+  }
+}
+
+/* Desktop styles (screens larger than 1024px) */
+@media (min-width: 1024px) {
+  .App {
+    max-width: 80%;
+  }
+
+  .main-screen, .mobile-screen {
+    width: 50%;
+  }
+
+  button {
+    font-size: 1.2em;
+  }
+
+  .timer {
+    width: 90px;
+    height: 90px;
+    font-size: 1.6rem;
+  }
+
+  .feedback {
+    font-size: 1.5em;
+  }
+}
