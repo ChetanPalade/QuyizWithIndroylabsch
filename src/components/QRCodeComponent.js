@@ -8,7 +8,7 @@ const QRCodeComponent = () => {
   return (
     <div className='qr-code'>
       <h1>Scan to Join the Code:</h1>
-      <QRCodeSVG value="http://localhost:3000" size={50}/>
+      <QRCodeSVG value="https://quyizwithindroylabschetanp.onrender.com/" size={100}/>
     </div>
    );
 
