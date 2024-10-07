@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #0cbedd;
+  height: 100%;
+  background-image: url("https://cdn.vectorstock.com/i/500p/02/90/quiz-game-blizzard-shape-neon-frame-ui-vector-53010290.jpg");
+  background-size: cover;
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+
+}
+
+.main-screen, .mobile-screen {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #090138;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+.main-screen, .mobile-screen :hover {
+  transform: scale(1.03);
+
+}
+
+.question-section {
+  margin-bottom: 20px;
+
+}
+
+.options p {
+  margin: 10px 0;
+}
+
+.feedback {
+  margin: 20px 0;
+  font-size: 1.2em;
+  color: green;
+  display: flex;
+  
+}
+
+.timer {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border:5px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12x;
+  font-weight: 700;
+  position: absolute;
+  bottom: 10px;
+  top: 80px;
+  color: red;
+
+}
+
+.players-section {
+  margin-top: 20px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3ed12a;
+}
+
+.option-button {
+  background-color: #594797;
+  color: #e2dddd;
+  border: 1px solid #1b1b1b;
+}
+
+.option-button.selected {
+  background-color: #390f7c;
+  color: white;
+}
+
+.qr-code {
+  margin-top: 20px;
+}
+
+.players-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+
+  .main-screen, .mobile-screen {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  button {
+    font-size: 1em;
+  }
+
+  input[type="text"] {
+    font-size: 1em;
+  }
+}
+
+
+
+
