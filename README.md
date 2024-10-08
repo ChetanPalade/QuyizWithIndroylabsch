@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Quiz Game with QR Code
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This is a responsive, interactive quiz game built with React, designed for players to join from their mobile devices by scanning a QR code. The game presents questions with multiple-choice answers, tracks players' progress, and displays the results. Players can see questions on both their mobile device and the main screen, answer in real-time, and receive feedback based on their answers.
 
-In the project directory, you can run:
+## ScreenShot
+![Screenshot (1331)](https://github.com/user-attachments/assets/5e9afdfb-dd8b-4077-b8d2-f53f4804d5eb)
 
-### `npm start`
+![Screenshot (1332)](https://github.com/user-attachments/assets/16ef4652-bd94-4f43-855e-0019ac832748)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Screenshot (1334)](https://github.com/user-attachments/assets/330bb64c-42ce-4da5-91a9-c0d4320dce95)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Screenshot (1333)](https://github.com/user-attachments/assets/554af1d9-115e-422e-b000-545a8a35ee56)
 
-### `npm test`
+![image](https://github.com/user-attachments/assets/0dad5ea8-133c-4400-a1e4-ee31b8413e70)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- **Multiplayer Join**: Players join the game by scanning a QR code, which takes them to the quiz on their mobile device.
+- **Real-Time Questions & Answers**: Questions are displayed on both the main screen (computer) and mobile devices. Players answer directly from their phone.
+- **Answer Validation**: Correct answers are displayed on the main screen with a congratulatory message, while wrong answers receive feedback on the mobile screen.
+- **Timer**: Countdown timer for each question to create a more challenging experience.
+- **Animations**: Smooth transitions and animations for question changes and feedback messages.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
 
-### `npm run eject`
+- **React.js**: Front-end framework for building the user interface.
+- **qrcode.react**: QR code generator component for easy mobile device participation.
+- **CSS3**: For styling and animations.
+- **LocalStorage**: Used to store player information and scores for offline access (e.g., for bookmarks).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Before you begin, ensure you have the following installed on your machine:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Node.js** (v14+ recommended)
+- **npm** or **yarn** (package manager)
 
-## Learn More
+### Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/ChetanPalade/QuyizWithIndroylabsch.git
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   Navigate into the project directory:
 
-### Code Splitting
+2. cd react-quiz-game
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Install dependencies:
+   npm install
 
-### Analyzing the Bundle Size
+4. Start the development server:
+   npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
